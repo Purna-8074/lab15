@@ -38,7 +38,7 @@ jobs:
       - name: Build and Push Frontend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./Reactfrontend
-          file: ./Reactfrontend/frontend.Dockerfile
+          context: ./ReactFrontend
+          file: ./ReactFrontend/frontend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansible-lfront:latest
